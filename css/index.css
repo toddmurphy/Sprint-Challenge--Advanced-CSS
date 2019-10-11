@@ -1,3 +1,4 @@
+/***** VARIABLES FOR REFERENCE ******/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -211,6 +212,21 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .sign-in {
+  display: flex;
+  width: 90px;
+  height: 30px;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  background: #22283a;
+  color: #f1f1f1;
+  justify-content: center;
+  align-items: center;
+}
+.home .walk .walk-text .sign-in:hover {
+  background: #f1f1f1;
+  color: #22283a;
 }
 .home .walk .walk-img {
   width: 46%;
