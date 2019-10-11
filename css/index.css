@@ -1,6 +1,9 @@
 .links-font {
   font-family: 'Russo One', sans-serif;
-  color: blue;
+  color: #22283a;
+}
+.new-style {
+  font-style: italic;
 }
 /***** VARIABLES FOR REFERENCE ******/
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -194,7 +197,7 @@ p {
   display: flex;
   justify-content: center;
   font-family: 'Russo One', sans-serif;
-  color: blue;
+  color: #22283a;
 }
 footer {
   color: #22283B;
@@ -211,6 +214,7 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+  font-style: italic;
 }
 .home .space-images {
   display: flex;
