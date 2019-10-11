@@ -173,6 +173,14 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .navigation-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
 .navigation-wrapper .logo {
   border: 2px solid green;
@@ -215,6 +223,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro .image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.home .intro .header-image {
+  width: 90%;
 }
 .home .intro h2 {
   padding: 15px;
