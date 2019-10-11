@@ -1,3 +1,7 @@
+.links-font {
+  font-family: 'Russo One', sans-serif;
+  color: blue;
+}
 /***** VARIABLES FOR REFERENCE ******/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -189,6 +193,8 @@ p {
   font-size: 1.6rem;
   display: flex;
   justify-content: center;
+  font-family: 'Russo One', sans-serif;
+  color: blue;
 }
 footer {
   color: #22283B;
