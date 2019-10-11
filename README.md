@@ -33,14 +33,22 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+   A fully responsive site allows developers to build to a wide variety of devices, such as: desktop, tablet, and phone. Responsive units are used throughout the site using % instead of hard coded values that don't scale with the introduction of media queries on table or phone. Using adaptive design, media queries are still used and can be hard coded but quicker to deploy.
 
 2. Describe what it means to be mobile first vs desktop first.
 
+Mobile first is to develop with for users to use applications on their phone first; therefore, the design is different than desktop and uses media queries to produce a specific design for mobile - in addition for media queries we develop from min-width and change our media queries to relfect going to the desktop. Desiging for desktop means developing on standard size (800px and above up to widescreen) and using the max-width media queries.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Font size at 62.5% allows us to set a default font-size to 10px and we can then use 'rem' to assign our font size. For example 20rem is 2rem (10px \* 2).
+
 4. How would you describe preprocessing to someone new to CSS?
+   I would describe processing as a much cleaner way to structure your code in self contained files that allow you to style a component or tag versus a single long traditional css file that houses all your styles. For example in preprocessing, we could build seperate files for navigation, footer, variables. Then you can import all files into one master index file to keep your code clean and structured to understand the layout. But most importantly, when importing those files, order matters, so the files have to listed as the way the website is structure.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favourite concept in less is the structured files and nesting. This suits my way of thinking of breaking things down into small pieces and building code that is self-contained to what your building. For example, when building a navagation, I can build the desktop and mobile designs in one location using nesting and know exactly where all my code is and how it will react in one location. If I need to change anything I only have to look in that specific location.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section _will_ prevent you from passing this challenge.
 
