@@ -1,23 +1,39 @@
 // Home Content
 
 .home {
-
   .intro {
+    .image-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .header-image {
+      width: 90%;
+    }
 
     h2 {
       padding: 15px;
-    }
+
+      @media @phone {
+        width: 100%;
+      } //This closes h2 media
+    } //This closes h2
 
     p {
-      padding:0 15px;
-    }
-  
-  }
+      padding: 0 15px;
+      .new-style();
+    } //This closes the p
+  } //This closes the intro
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+    } //This closes space image media
 
     img {
       width: 28%;
@@ -25,19 +41,46 @@
       border-radius: 20px;
       height: 100%;
     }
+
+    .blast {
+      @media @phone {
+        width: 90%;
+      }
+    }
+
+    .launch {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .sky {
+      @media @phone {
+        display: none;
+      }
+    }
   }
 
   .visit-planets {
     padding: 15px;
 
+    @media @phone {
+    } //This closes wrapper media
+
     h3 {
       margin-top: 11px;
-    }
+
+      @media @phone {
+      } //This close planets h3 media
+    } //This closes h3
 
     p {
       margin-top: 13px;
-    }
-  }
+
+      @media @phone {
+      } //this closes plants p media
+    } //This closes p
+  } //This close visiting planets
 
   .walk {
     margin-top: 60px;
@@ -46,25 +89,49 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+    } //This closes walk media
+
     .walk-text {
       width: 50%;
 
+      @media @phone {
+        width: 100%;
+        padding-top: 5%;
+      } //This closes the width media
+
       h3 {
         margin-bottom: 10px;
+
+        @media @phone {
+          width: 90%;
+        }
       }
 
       p {
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
+      .sign-in {
+        .custom-button(@btn-bg-color, @sea-shell);
+
+        @media @phone {
+          width: 100%;
+          height: 50px;
+        }
+      } //This closes sign-in button
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @phone {
+        width: 100%;
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +139,4 @@
       }
     }
   }
-}// home
+} // home
